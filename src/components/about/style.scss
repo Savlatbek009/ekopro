@@ -1,0 +1,27 @@
+.about {
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+
+  .team-image {
+    width: 100%;
+    margin: 2rem 0; /* Add space around the image */
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  .contact-btn {
+    background-color: #007bff; /* Adjust button color */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate clickable button */
+  }
+}
