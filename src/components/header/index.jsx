@@ -10,10 +10,15 @@ const Header = () => {
       {isOpen ? (
         <div className="open">
           <div className="navigations">
-            <a href="#">Haqimizda</a>
-            <a href="#">Sertifikat</a>
-            <a href="#">Rasmlar</a>
-            <a href="#">Bog`lanish</a>
+            <a onClick={() => setIsOpen(false)} href="#about">
+              Haqimizda
+            </a>
+            <a onClick={() => setIsOpen(false)} href="#sertificatte">
+              Sertifikat
+            </a>
+            <a onClick={() => setIsOpen(false)} href="#photos">
+              Rasmlar
+            </a>
           </div>
           <div className="action">
             <button>Bog`lanish</button>
@@ -29,10 +34,15 @@ const Header = () => {
           </a>
 
           <div className="navigations">
-            <a href="#">Haqimizda</a>
-            <a href="#">Sertifikat</a>
-            <a href="#">Rasmlar</a>
-            <a href="#">Bog`lanish</a>
+            <a onClick={() => setIsOpen(false)} href="#">
+              Haqimizda
+            </a>
+            <a onClick={() => setIsOpen(false)} href="#">
+              Rasmlar
+            </a>
+            <a onClick={() => setIsOpen(false)} href="#">
+              Sertifikat
+            </a>
           </div>
           <div className="action">
             <button>Bog`lanish</button>

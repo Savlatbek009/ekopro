@@ -1,0 +1,17 @@
+#home {
+  width: 100%;
+  height: calc(100vh - 84px);
+  background: url("/images/bg/bg.gif"), no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-container {
+  width: 100%;
+  height: calc(100vh - 84px);
+  background: #00000071;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

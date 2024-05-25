@@ -2,19 +2,38 @@ import "./style.scss";
 
 const About = () => {
   return (
-    <div className="about">
-      <h1>About Us</h1>
-      <p>
-        Write a compelling description about your company, mission, and values.
-        Highlight what makes you unique and why users should choose you.
-      </p>
-      <img src="./team.jpg" alt="Our Team" className="team-image" />
-      <h2>Meet the Team</h2>
-      <p>
-        Introduce your team members with their roles and expertise. You can use
-        cards or a list format.
-      </p>
-      <button className="contact-btn">Contact Us</button>
+    <div id="about" className="about">
+      <div className="container">
+        <div className="about_header">
+          <h1 className="section_title">Biz haqimizda</h1>
+        </div>
+        <div className="about_body">
+          <div className="row">
+            <div className="row_img">
+              <img src="/images/png/mahsulot.png" alt="" />
+            </div>
+            <div className="row_text">
+              <h1>Kilikant</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                voluptates corporis dignissimos. Quae praesentium iusto ut
+                quaerat! Voluptate commodi esse dolor rem nemo cum eligendi
+                suscipit officia ad, sapiente quasi!
+              </p>
+              <h1 className="about_use">
+                <span>01</span> Lorem, ipsum.
+              </h1>
+              <h1 className="about_use">
+                <span>02</span> Lorem, ipsum.
+              </h1>
+              <h1 className="about_use">
+                <span>03</span> Lorem, ipsum.
+              </h1>
+              {/* <button>Hoziroq buyurtma qilish</button> */}
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
