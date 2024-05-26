@@ -1,9 +1,11 @@
 #home {
   width: 100%;
-  height: calc(100vh - 84px);
+  height: 100vh;
   background: url("/images/bg/bg.jpg"), no-repeat;
   background-size: cover;
   background-position: center;
+  @media (max-width: 850px) {
+  }
   center {
     h2 {
       font-size: 43px;
