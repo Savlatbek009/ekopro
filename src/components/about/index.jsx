@@ -5,35 +5,37 @@ const About = () => {
     <div id="about" className="about">
       <div className="container">
         <div className="about_header">
-          <h1 className="section_title">Haqimizda</h1>
+          <h1 data-aos="fade-up" className="section_title">
+            Haqimizda
+          </h1>
         </div>
         <div className="about_body">
-          <center className="row_img">
+          <center data-aos="fade-up" className="row_img">
             <img src="/images/jpg/about.jpg" alt="" />
           </center>
           <div className="row_text">
-            <h1>Silikant</h1>
+            <h1 data-aos="fade-up">Silikant</h1>
             <center>
-              <p>
+              <p data-aos="fade-up">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
                 voluptates corporis dignissimos. Quae praesentium iusto ut
                 quaerat! Voluptate commodi esse dolor rem nemo cum eligendi
                 suscipit officia ad, sapiente quasi!
               </p>
             </center>
-            <h1 className="about_use">
+            <h1 data-aos="fade-up" className="about_use">
               <span>01</span> Lorem ipsum dolor sit amet consectetur adipisicing
               elit. Modi, provident?
             </h1>
-            <h1 className="about_use">
+            <h1 data-aos="fade-up" className="about_use">
               <span>02</span> Lorem ipsum dolor sit amet consectetur adipisicing
               elit. Modi, provident?
             </h1>
-            <h1 className="about_use">
+            <h1 data-aos="fade-up" className="about_use">
               <span>03</span> Lorem ipsum dolor sit amet consectetur adipisicing
               elit. Modi, provident?
             </h1>
-            <center>
+            <center data-aos="fade-up">
               <button>Hoziroq buyurtma qilish</button>
             </center>
           </div>

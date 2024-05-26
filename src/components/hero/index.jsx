@@ -7,6 +7,14 @@ const Hero = () => {
       <div className="hero-container">
         <div className="container">
           <center>
+            <h2 data-aos="fade-up">Seolit</h2>
+            <p data-aos="fade-up">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequatur, quibusdam!
+            </p>
+            <button data-aos="fade-up">Hoziroq buyurtma berish</button>
+          </center>
+          <center>
             <h1
               onClick={() => {
                 window.scrollTo({

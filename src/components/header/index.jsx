@@ -20,9 +20,9 @@ const Header = () => {
               Rasmlar
             </a>
           </div>
-          <div className="action">
+          <a href="#contact" className="action">
             <button>Bog`lanish</button>
-          </div>
+          </a>
         </div>
       ) : (
         ""
@@ -44,9 +44,9 @@ const Header = () => {
               Sertifikat
             </a>
           </div>
-          <div className="action">
+          <a href="#contact" className="action">
             <button>Bog`lanish</button>
-          </div>
+          </a>
           <div className="menu" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? (
               <img width={"30px"} src="/images/png/x.png" alt="" />

@@ -1,65 +1,40 @@
+import { FiArrowUpRight } from "react-icons/fi";
 import "./style.scss";
+import { GoArrowDown, GoArrowUp, GoArrowUpLeft } from "react-icons/go";
 
 const Photos = () => {
   return (
     <>
       <section id="photos" className="photos">
-        <h1 className="section_title">Rasmlar</h1>
+        <h1 data-aos="fade-up" className="section_title">
+          Rasmlar
+        </h1>
         <div className="container">
-          <div className="photos-grid">
-            <div className="photo-div">
-              <div className="img-container">
-                <img src="/images/png/mahsulot.png" alt="" />
+          <div className="row">
+            <img data-aos="fade-up" src="/images/jpg/seolit1.jpg" alt="" />
+            <div data-aos="fade-up" className="arrow arrow-to-right">
+              <div className="appear">
+                <GoArrowDown />
               </div>
-              <div className="text-container">
-                <h1>Silikant</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Libero, itaque.
-                </p>
-                <button>Sotib olish</button>
+              <div className="disappear">
+                <FiArrowUpRight />
               </div>
             </div>
-            <div className="photo-div">
-              <div className="img-container">
-                <img src="/images/png/mahsulot.png" alt="" />
+
+            <img data-aos="fade-up" src="/images/jpg/seolit2.jpg" alt="" />
+            <div data-aos="fade-up" className="arrow arrow-to-left">
+              <div className="disappear">
+                <GoArrowUpLeft />
               </div>
-              <div className="text-container">
-                <h1>Silikant</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Libero, itaque.
-                </p>
-                <button>Sotib olish</button>
+              <div className="appear">
+                <GoArrowUp />
               </div>
             </div>
-            <div className="photo-div">
-              <div className="img-container">
-                <img src="/images/png/mahsulot.png" alt="" />
-              </div>
-              <div className="text-container">
-                <h1>Silikant</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Libero, itaque.
-                </p>
-                <button>Sotib olish</button>
-              </div>
-            </div>
-            <div className="photo-div">
-              <div className="img-container">
-                <img src="/images/png/mahsulot.png" alt="" />
-              </div>
-              <div className="text-container">
-                <h1>Silikant</h1>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Libero, itaque.
-                </p>
-                <button>Sotib olish</button>
-              </div>
-            </div>
+            <img data-aos="fade-up" src="/images/jpg/about.jpg" alt="" />
           </div>
+          <center>
+            <button data-aos="fade-up">Yana o`qish</button>
+          </center>
         </div>
       </section>
     </>

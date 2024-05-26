@@ -14,10 +14,12 @@ const Contact = () => {
           </div>
           <div className="contact__row__side contact__row__side--right">
             <div className="contact__content">
-              <h1>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem,
-                quia?
-              </h1>
+              <iframe
+                src="https://yandex.ru/map-widget/v1/-/CDfmBHPq"
+                width="100%"
+                height="300px"
+              ></iframe>
+              <br />
               <div className="contact__details">
                 <a href="https://t.me/savlatbek_coder">
                   <FaTelegramPlane /> {`Telegramdan bog'lanish`}

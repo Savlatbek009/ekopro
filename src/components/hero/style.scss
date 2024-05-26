@@ -7,14 +7,14 @@
   center {
     h2 {
       font-size: 43px;
-      color: rgb(0, 132, 255);
+      color: #000;
     }
     p {
-      color: rgb(0, 132, 255);
+      color: #000;
     }
     button {
       transition: 0.5s all;
-      background: rgb(0, 132, 255);
+      background: #000;
       color: #fff;
       margin-top: 10px;
       padding: 10px 20px;
@@ -23,19 +23,19 @@
       border-radius: 4px;
       &:hover:before {
         transform: scale(1.2);
-        box-shadow: 0 0 15px rgb(0, 132, 255);
+        box-shadow: 0 0 15px #000;
         filter: blur(3px);
       }
 
       &:hover {
         color: #f2f2f2;
-        box-shadow: 0 0 15px rgb(0, 132, 255);
-        text-shadow: 0 0 15px rgb(0, 132, 255);
+        box-shadow: 0 0 15px #000;
+        text-shadow: 0 0 15px #000;
       }
     }
   }
   h1 {
-    color: rgb(0, 132, 255);
+    color: #000;
     font-size: 52px;
     position: absolute;
     right: 0;
