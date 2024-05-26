@@ -12,7 +12,7 @@ const Photos = () => {
                 <img src="/images/png/mahsulot.png" alt="" />
               </div>
               <div className="text-container">
-                <h1>Kilikant</h1>
+                <h1>Silikant</h1>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Libero, itaque.
@@ -25,7 +25,7 @@ const Photos = () => {
                 <img src="/images/png/mahsulot.png" alt="" />
               </div>
               <div className="text-container">
-                <h1>Kilikant</h1>
+                <h1>Silikant</h1>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Libero, itaque.
@@ -38,7 +38,7 @@ const Photos = () => {
                 <img src="/images/png/mahsulot.png" alt="" />
               </div>
               <div className="text-container">
-                <h1>Kilikant</h1>
+                <h1>Silikant</h1>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Libero, itaque.
@@ -51,7 +51,7 @@ const Photos = () => {
                 <img src="/images/png/mahsulot.png" alt="" />
               </div>
               <div className="text-container">
-                <h1>Kilikant</h1>
+                <h1>Silikant</h1>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Libero, itaque.

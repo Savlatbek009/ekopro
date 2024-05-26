@@ -1,17 +1,67 @@
 #home {
   width: 100%;
   height: calc(100vh - 84px);
-  background: url("/images/bg/bg.gif"), no-repeat;
+  background: url("/images/bg/bg.jpg"), no-repeat;
   background-size: cover;
   background-position: center;
+  center {
+    h2 {
+      font-size: 43px;
+      color: rgb(0, 132, 255);
+    }
+    p {
+      color: rgb(0, 132, 255);
+    }
+    button {
+      transition: 0.5s all;
+      background: rgb(0, 132, 255);
+      color: #fff;
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 19px;
+      border: none;
+      border-radius: 4px;
+      &:hover:before {
+        transform: scale(1.2);
+        box-shadow: 0 0 15px rgb(0, 132, 255);
+        filter: blur(3px);
+      }
+
+      &:hover {
+        color: #f2f2f2;
+        box-shadow: 0 0 15px rgb(0, 132, 255);
+        text-shadow: 0 0 15px rgb(0, 132, 255);
+      }
+    }
+  }
+  h1 {
+    color: rgb(0, 132, 255);
+    font-size: 52px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 20px;
+    animation: moving 4s infinite;
+  }
 }
 
 .hero-container {
   width: 100%;
   height: calc(100vh - 84px);
-  background: #00000071;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes moving {
+  0% {
+    bottom: 20px;
+  }
+  50% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 20px;
+  }
 }

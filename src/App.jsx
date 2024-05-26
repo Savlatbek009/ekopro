@@ -1,4 +1,5 @@
 import About from "./components/about";
+import Contact from "./components/contact";
 import Header from "./components/header";
 import Hero from "./components/hero";
 import Photos from "./components/photos";
@@ -12,6 +13,7 @@ const App = () => {
       <About />
       <Photos />
       <Sertificatte />
+      <Contact />
     </>
   );
 };
