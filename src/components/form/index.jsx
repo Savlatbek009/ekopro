@@ -5,11 +5,11 @@ import "./style.scss";
 const RegisterForm = () => {
   return (
     <form name="register-form">
-      <div data-aos="fade-up" data-aos-delay="1000" className="register-input">
+      <div data-aos="fade-up" className="register-input">
         <input name="firstName" type="text" required />
         <label>Ismingiz</label>
       </div>
-      <div data-aos="fade-up" data-aos-delay="1100" className="register-input">
+      <div data-aos="fade-up" className="register-input">
         <InputMask
           className="register-mask-input"
           name="phoneNumber"
@@ -23,7 +23,6 @@ const RegisterForm = () => {
       </div>
       <button
         data-aos="fade-up"
-        data-aos-delay="1200"
         className="register-form__button"
       >{`Buyurtma berish`}</button>
     </form>

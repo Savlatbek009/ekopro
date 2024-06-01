@@ -17,18 +17,14 @@ const Hero = () => {
         <div className="hero-container">
           <div className="row">
             <div className="text_side">
-              <h1 data-aos="fade-up" data-aos-delay="1000">
-                Seliolit
-              </h1>
-              <p data-aos="fade-up" data-aos-delay="1100">
+              <h1 data-aos="fade-up">Seliolit</h1>
+              <p data-aos="fade-up">
                 Seliolit bu lorem ipsum dolor sit amet consectetur adipisicing{" "}
                 elit. Quibusdam deleniti.
               </p>
-              <button data-aos="fade-up" data-aos-delay="1200">
-                Bog`lanish
-              </button>
+              <button data-aos="fade-up">Bog`lanish</button>
             </div>
-            <div data-aos="fade-up" data-aos-delay="1300" className="img_side">
+            <div data-aos="fade-up" className="img_side">
               <Swiper
                 pagination={{
                   type: "fraction",
