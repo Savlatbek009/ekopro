@@ -1,13 +1,12 @@
 import { useEffect } from "react";
-import About from "./components/about";
 import Contact from "./components/contact";
-import Header from "./components/header";
-import Hero from "./components/hero";
-import Photos from "./components/photos";
-import Sertificatte from "./components/sertificate";
+
 import AOS from "aos";
 
 import "aos/dist/aos.css";
+import Header from "./components/header";
+import Hero from "./components/hero";
+import About from "./components/about";
 
 const App = () => {
   useEffect(() => {
@@ -17,10 +16,9 @@ const App = () => {
   return (
     <>
       <Header />
+      <div style={{ height: "88.27px" }}></div>
       <Hero />
       <About />
-      <Photos />
-      <Sertificatte />
       <Contact />
     </>
   );

@@ -1,58 +1,103 @@
-import { useState } from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
+import { useState, useEffect } from "react";
+
+import { BsMoonFill } from "react-icons/bs";
+import { FaSun } from "react-icons/fa";
+import { FaBarsStaggered } from "react-icons/fa6";
+import { MdClose } from "react-icons/md";
+import logo from "./logo.png";
 
 import "./style.scss";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  return (
-    <header>
-      {isOpen ? (
-        <div className="open">
-          <div className="navigations">
-            <a onClick={() => setIsOpen(false)} href="#about">
-              Haqimizda
-            </a>
-            <a onClick={() => setIsOpen(false)} href="#sertificatte">
-              Sertifikat
-            </a>
-            <a onClick={() => setIsOpen(false)} href="#photos">
-              Rasmlar
-            </a>
-          </div>
-            <a onClick={() => setIsOpen(false)} href="#contact" className="action">
-              <button>Bog`lanish</button>
-            </a>
-        </div>
-      ) : (
-        ""
-      )}
-      <div className="container">
-        <nav>
-          <a href="/" className="logo">
-            <img src="/images/logo/logo.png" alt="logo" /> <h1>Ekopro</h1>
-          </a>
+  const [themeDark, setThemeDark] = useState(false);
+  const [headerOpen, setHeaderOpen] = useState(false);
+  const [shrink, setShrink] = useState(false);
 
-          <div className="navigations">
-            <a onClick={() => setIsOpen(false)} href="#">
-              Haqimizda
-            </a>
-            <a onClick={() => setIsOpen(false)} href="#">
-              Rasmlar
-            </a>
-            <a onClick={() => setIsOpen(false)} href="#">
-              Sertifikat
+  useEffect(() => {
+    const handleScroll = () => {
+      const isShrink = window.scrollY > 100;
+      setShrink(isShrink);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <header className={`header ${shrink ? "shrink" : ""}`}>
+      <div className="container">
+        <nav className="nav">
+          <button
+            className="nav__toggle"
+            onClick={() => setHeaderOpen(!headerOpen)}>
+            <FaBarsStaggered size={25} />
+          </button>
+          <div className="nav__logo">
+            <a href="/#">
+              <img width={"50px"} src={logo} alt="logo" />
             </a>
           </div>
-          <a onClick={() => setIsOpen(false)} href="#contact" className="action">
-            <button>Bog`lanish</button>
-          </a>
-          <div className="menu" onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? (
-              <img width={"30px"} src="/images/png/x.png" alt="" />
-            ) : (
-              <GiHamburgerMenu />
-            )}
+          <ul className={`${headerOpen ? "header-open" : ""}`}>
+            <button
+              className="nav__close"
+              onClick={() => setHeaderOpen(!headerOpen)}>
+              <MdClose size={30} />
+            </button>
+            <li className="nav__item">
+              <a
+                onClick={() => setHeaderOpen(!headerOpen)}
+                to="/about"
+                href="#about"
+                className="nav__link">
+                Haqimizda
+              </a>
+            </li>
+
+            <li className="nav__item">
+              <a
+                onClick={() => setHeaderOpen(!headerOpen)}
+                href="/#photos"
+                className="nav__link">
+                {`Rasmlar`}
+              </a>
+            </li>
+            {/* <li className="nav__item">
+              <a
+                onClick={() => setHeaderOpen( !headerOpen )}
+                to='/#projects'
+                href="#projects"
+                className="nav__link"
+              >
+                Proyektlar
+              </a>
+            </li> */}
+            <li className="nav__item">
+              <a
+                onClick={() => setHeaderOpen(!headerOpen)}
+                to="/#service"
+                href="#service"
+                className="nav__link">
+                Xizmatlar
+              </a>
+            </li>
+            <li className="nav__item">
+              <a
+                onClick={() => setHeaderOpen(!headerOpen)}
+                href="/#contact"
+                className="nav__link">
+                {`Bog'lanish`}
+              </a>
+            </li>
+          </ul>
+          <div className="nav__actions">
+            <button
+              onClick={() => {
+                // document.body.classList.toggle( "dark" );
+                setThemeDark(!themeDark);
+              }}>
+              {themeDark ? <FaSun size={20} /> : <BsMoonFill size={20} />}
+            </button>
           </div>
         </nav>
       </div>
